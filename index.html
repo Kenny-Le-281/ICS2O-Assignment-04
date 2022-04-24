@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<!--- ICS2O-My first PWA -->
+<!--- ICS2O-Assignment-04 -->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="My first PWA" />
+    <meta name="description" content="Pizza Order" />
     <meta name="keywords" content="mths, ics2o" />
     <meta name="author" content="Kenny Le" />
     <meta name="theme-color" content="#FFFFFF" />
@@ -18,7 +18,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-    <title>GitHub page as PWA template</title>
+    <title>Pizza Order</title>
   </head>
   <body>
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
@@ -26,23 +26,63 @@
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
-          <span class="mdl-layout-title">My first PWA</span>
+          <span class="mdl-layout-title">Pizza Order</span>
         </div>
       </header>
       <main class="mdl-layout__content">
         <p></p>
-        <img src="./images/thermometer.svg" alt="thermometer" width="25%" height="25%">
-        <p></p>
+        <img src="./images/pizza2.svg" alt="pizza" width="50%" height="50%">
+        <form>
+          <div id="pizza-size">
+            <h4>Pizza Size</h4>
+            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="size-large">
+              <input type="radio" id="size-large" class="mdl-radio__button" name="options" value="1">
+              <span class="mdl-radio__label">Large ($6.00)</span>
+            </label>
+            <br>
+            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="size-extra-large">
+              <input type="radio" id="size-extra-large" class="mdl-radio__button" name="options" value="1">
+              <span class="mdl-radio__label">Extra Large ($10.00)</span>
+            </label>
+          </div>
+        </form>
+        <br>
+        <br>
+        <form>
+          <div id="pizza-topping">
+            <h4>Pizza Toppings</h4>
+            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect2" for="first-topping">
+              <input type="radio" id="first-topping" class="mdl-radio__button" name="options" value="1">
+              <span class="mdl-radio__label">1 Topping ($1.00)</span>
+            </label>
+            <br>
+            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="two-toppings">
+              <input type="radio" id="two-toppings" class="mdl-radio__button" name="options" value="1">
+              <span class="mdl-radio__label">2 Toppings ($1.75)</span>
+            </label>
+            <br>
+            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="three-toppings">
+              <input type="radio" id="three-toppings" class="mdl-radio__button" name="options" value="1">
+              <span class="mdl-radio__label">3 Toppings ($2.50)</span>
+            </label>
+            <br>
+            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="four-toppings">
+              <input type="radio" id="four-toppings" class="mdl-radio__button" name="options" value="1">
+              <span class="mdl-radio__label">4 Toppings ($3.35)</span>
+            </label>
+          </div>
+        </form>
+        <br>
+        <br>
+        <br>
         <!-- Raised button with ripple -->
-        <button
-          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-          onclick="myButtonClicked()"
-        >
-          Say "Hello, World!"
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+          onclick="total()">
+          Total Cost
         </button>
         <!-- basic text -->
         <p></p>
-        <div id="hello-world"></div>
+        <div id="total-cost"></div>
       </main>
     </div>
   </body>
