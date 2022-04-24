@@ -23,7 +23,9 @@ function total() {
   const extraLarge = parseInt(document.getElementById("size-extra-large").value)
   const oneTopping = parseFloat(document.getElementById("first-topping").value)
   const twoTopping = parseFloat(document.getElementById("two-toppings").value)
-  const threeTopping = parseFloat(document.getElementById("three-toppings").value)
+  const threeTopping = parseFloat(
+    document.getElementById("three-toppings").value
+  )
   const fourTopping = parseFloat(document.getElementById("four-toppings").value)
   const pizzaSize = parseFloat(document.getElementById("pizza-size").value)
   const pizzaTopping = parseFloat(
