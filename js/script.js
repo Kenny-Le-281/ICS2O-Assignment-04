@@ -19,46 +19,42 @@ if (navigator.serviceWorker) {
 function total() {
   // input
   const taxRate = 0.13
-  const large = parseInt(document.getElementById("size-large").value)
-  const extraLarge = parseInt(document.getElementById("size-extra-large").value)
-  const oneTopping = parseFloat(document.getElementById("first-topping").value)
-  const twoTopping = parseFloat(document.getElementById("two-toppings").value)
-  const threeTopping = parseFloat(
-    document.getElementById("three-toppings").value
-  )
-  const fourTopping = parseFloat(document.getElementById("four-toppings").value)
-  const pizzaSize = parseFloat(document.getElementById("pizza-size").value)
-  const pizzaTopping = parseFloat(
-    document.getElementById("pizza-topping").value
-  )
-
+  const large = document.getElementById("size-large")
+  const extraLarge = document.getElementById("size-extra-large")
+  const oneTopping = document.getElementById("first-topping")
+  const twoTopping = document.getElementById("two-toppings")
+  const threeTopping = document.getElementById("three-toppings")
+  const fourTopping = document.getElementById("four-toppings")
+  
   // process and output
-  if (large.Checked == true) {
-    varpizzaSize = 6.0
+  var pizzaSize = 0
+  var pizzaTopping = 0
+  
+  if (large.checked) {
+    pizzaSize = 6.0
   }
 
-  if (extraLarge.Checked == true) {
+  if (extraLarge.checked) {
     pizzaSize = 10.0
   }
 
-  if (oneTopping.Checked == true) {
+  if (oneTopping.checked) {
     pizzaTopping = 1.0
   }
 
-  if (twoTopping.Checked == true) {
+  if (twoTopping.checked) {
     pizzaTopping = 1.75
   }
 
-  if (threeTopping.Checked == true) {
+  if (threeTopping.checked) {
     pizzaTopping = 2.5
   }
 
-  if (fourTopping.Checked == true) {
+  if (fourTopping.checked) {
     pizzaTopping = 3.35
   }
 
-  const totalCost = (pizzaSize + pizzaTopping) * (1.0 - taxRate)
+  totalCost = (pizzaSize + pizzaTopping) * (1.0 + taxRate)
 
-  document.getElementById("total-cost").innerHTML =
-    "The total cost will be:" + totalCost.toFixed(2)
+  document.getElementById("total-cost").innerHTML = "The total cost will be: $" + totalCost.toFixed(2)
 }
