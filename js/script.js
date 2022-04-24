@@ -23,42 +23,37 @@ function total() {
   const extraLarge = parseInt(document.getElementById("size-extra-large").value)
   const oneTopping = parseFloat(document.getElementById("first-topping").value)
   const twoTopping = parseFloat(document.getElementById("two-toppings").value)
-  const threeTopping = parseFloat(
-    document.getElementById("three-toppings").value
-  )
+  const threeTopping = parseFloat(document.getElementById("three-toppings").value)
   const fourTopping = parseFloat(document.getElementById("four-toppings").value)
   const pizzaSize = parseFloat(document.getElementById("pizza-size").value)
-  const pizzaTopping = parseFloat(
-    document.getElementById("pizza-topping").value
-  )
+  const pizzaTopping = parseFloat(document.getElementById("pizza-topping").value)
 
   // process and output
-  if (large.Checked == True) {
-    pizzaSize = 6.0
+  if (large.Checked == true) {
+    varpizzaSize = 6.00
   }
 
-  if (extraLarge.Checked == True) {
-    pizzaSize = 10.0
+  if (extraLarge.Checked == true) {
+    pizzaSize = 10.00
   }
 
-  if (oneTopping.Checked == True) {
-    pizzaTopping = 1.0
+  if (oneTopping.Checked == true) {
+    pizzaTopping = 1.00
   }
 
-  if (twoTopping.Checked == True) {
+  if (twoTopping.Checked == true) {
     pizzaTopping = 1.75
   }
 
-  if (threeTopping.Checked == True) {
-    pizzaTopping = 2.5
+  if (threeTopping.Checked == true) {
+    pizzaTopping = 2.50
   }
 
-  if (fourTopping.Checked == True) {
+  if (fourTopping.Checked == true) {
     pizzaTopping = 3.35
   }
 
-  const totalCost = (pizzaSize + pizzaToping) * (1.0 - taxRate)
+  const totalCost = (pizzaSize + pizzaTopping) * (1.00 - taxRate)
 
-  document.getElementById("total-cost").innerHTML =
-    "The total cost will be:" + totalCost.toFixed(2)
+  document.getElementById('total-cost').innerHTML = 'The total cost will be:' + totalCost.toFixed(2)
 }
