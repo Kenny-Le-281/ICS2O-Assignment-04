@@ -18,39 +18,39 @@ if (navigator.serviceWorker) {
  */
 function total() {
   // input
-  const taxRate = 1.13
-  const large = document.getElementById("size-large")
-  const extraLarge = document.getElementById("size-extra-large")
-  const oneTopping = document.getElementById("first-topping")
-  const twoTopping = document.getElementById("two-toppings")
-  const threeTopping = document.getElementById("three-toppings")
-  const fourTopping = document.getElementById("four-toppings")
+  const large = document.getElementById("size-large").checked
+  const extraLarge = document.getElementById("size-extra-large").checked
+  const oneTopping = document.getElementById("first-topping").checked
+  const twoTopping = document.getElementById("two-toppings").checked
+  const threeTopping = document.getElementById("three-toppings").checked
+  const fourTopping = document.getElementById("four-toppings").checked
 
   // process and output
+  const taxRate = 1.13
   var pizzaSize = 0
   var pizzaTopping = 0
 
-  if (large.checked) {
+  if (large == true) {
     pizzaSize = 6.0
   }
 
-  if (extraLarge.checked) {
+  if (extraLarge == true) {
     pizzaSize = 10.0
   }
 
-  if (oneTopping.checked) {
+  if (oneTopping == true) {
     pizzaTopping = 1.0
   }
 
-  if (twoTopping.checked) {
+  if (twoTopping == true) {
     pizzaTopping = 1.75
   }
 
-  if (threeTopping.checked) {
+  if (threeTopping == true) {
     pizzaTopping = 2.5
   }
 
-  if (fourTopping.checked) {
+  if (fourTopping == true) {
     pizzaTopping = 3.35
   }
 
