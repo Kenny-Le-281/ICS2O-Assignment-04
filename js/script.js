@@ -18,7 +18,7 @@ if (navigator.serviceWorker) {
  */
 function total() {
   // input
-  const taxRate = 0.13
+  const taxRate = 1.13
   const large = document.getElementById("size-large")
   const extraLarge = document.getElementById("size-extra-large")
   const oneTopping = document.getElementById("first-topping")
@@ -54,7 +54,7 @@ function total() {
     pizzaTopping = 3.35
   }
 
-  totalCost = (pizzaSize + pizzaTopping) * (1.0 + taxRate)
+  totalCost = (pizzaSize + pizzaTopping) * taxRate
 
   document.getElementById("total-cost").innerHTML = "The total cost will be: $" + totalCost.toFixed(2)
 }
