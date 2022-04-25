@@ -33,29 +33,25 @@ function total() {
   if (large == true) {
     pizzaSize = 6.0
   }
-
-  if (extraLarge == true) {
+  else if (extraLarge == true) {
     pizzaSize = 10.0
   }
 
   if (oneTopping == true) {
     pizzaTopping = 1.0
   }
-
-  if (twoTopping == true) {
+  else if (twoTopping == true) {
     pizzaTopping = 1.75
   }
-
-  if (threeTopping == true) {
+  else if (threeTopping == true) {
     pizzaTopping = 2.5
   }
-
-  if (fourTopping == true) {
+  else if (fourTopping == true) {
     pizzaTopping = 3.35
   }
 
   totalCost = (pizzaSize + pizzaTopping) * taxRate
 
   document.getElementById("total-cost").innerHTML =
-    "The total cost will be: $" + totalCost.toFixed(2)
+    "The total cost will be: $" + totalCost.toFixed(2) + "."
 }
