@@ -30,21 +30,17 @@ function total() {
 
   if (large == true) {
     pizzaSize = 6.0
-  }
-  else if (extraLarge == true) {
+  } else if (extraLarge == true) {
     pizzaSize = 10.0
   }
 
   if (oneTopping == true) {
     pizzaTopping = 1.0
-  }
-  else if (twoTopping == true) {
+  } else if (twoTopping == true) {
     pizzaTopping = 1.75
-  }
-  else if (threeTopping == true) {
+  } else if (threeTopping == true) {
     pizzaTopping = 2.5
-  }
-  else if (fourTopping == true) {
+  } else if (fourTopping == true) {
     pizzaTopping = 3.35
   }
 
