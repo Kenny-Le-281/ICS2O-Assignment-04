@@ -47,5 +47,5 @@ function total() {
   totalCost = (pizzaSize + pizzaTopping) * taxRate
 
   document.getElementById("total-cost").innerHTML =
-    "The total cost will be: $" + totalCost.toFixed(2) + "."
+    "The total cost og the pizza will be: $" + totalCost.toFixed(2) + "."
 }
