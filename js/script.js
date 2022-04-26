@@ -27,6 +27,8 @@ function total() {
 
   // process and output
   const taxRate = 1.13
+  var pizzaSize = 0
+  var pizzaTopping = 0
 
   if (large == true) {
     pizzaSize = 6.0
