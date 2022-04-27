@@ -17,5 +17,29 @@ p {
   color: black;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 1.5rem;
+  font-style: italic;
+  padding-top: 5pt;
+}
+
+h3 {
+  color: black;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  padding-top: 5pt;
+}
+
+h4 {
+  color: black;
+  font-family: Garamond, Arial, sans-serif;
+  font-size: 1rem;
+  padding-top: 5pt;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+#total-cost {
+  color: black;
+  font-family: Garamond, Arial, sans-serif;
+  font-size: 18px;
   padding-top: 5pt;
 }
