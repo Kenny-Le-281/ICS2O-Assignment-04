@@ -25,7 +25,7 @@ function total() {
   const threeTopping = document.getElementById("three-toppings").checked
   const fourTopping = document.getElementById("four-toppings").checked
 
-  // process and output
+  // process
   const taxRate = 1.13
   var pizzaSize = 0
   var pizzaTopping = 0
@@ -48,6 +48,7 @@ function total() {
 
   totalCost = (pizzaSize + pizzaTopping) * taxRate
 
+  // output
   document.getElementById("total-cost").innerHTML =
     "The total cost of the pizza will be: $" + totalCost.toFixed(2)
 }
