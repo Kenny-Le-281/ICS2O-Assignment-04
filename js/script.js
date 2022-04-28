@@ -14,7 +14,7 @@ if (navigator.serviceWorker) {
 ;("use strict")
 
 /**
- * This function checks if you guessed the right number.
+ * This function calculates the pizza price.
  */
 function total() {
   // input
